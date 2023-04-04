@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+	<item>
+		<shape>
+			<solid android:color="{2:2130903293}" />
+		</shape>
+	</item>
+	<item>
+		<shape>
+			<solid android:color="res/color/m3_appbar_overlay_color.xml" />
+		</shape>
+	</item>
+</layer-list>

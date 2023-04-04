@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" android:compileSdkVersion="32" android:compileSdkVersionCodename="12" package="com.example.mogo_app" platformBuildVersionCode="32" platformBuildVersionName="12">
+	<uses-sdk android:minSdkVersion="21" android:targetSdkVersion="32" />
+	<application android:theme="resourceId:0x7f10023d" android:label="Mogo_App" android:icon="res/mipmap-xxxhdpi-v4/ic_launcher.png" android:debuggable="true" android:testOnly="true" android:allowBackup="true" android:supportsRtl="true" android:roundIcon="res/drawable/logofinal.png" android:appComponentFactory="androidx.core.app.CoreComponentFactory">
+		<activity android:name="com.example.mogo_app.MainMenu" android:exported="false" />
+		<activity android:name="com.example.mogo_app.RegisterMenu" android:exported="false" />
+		<activity android:name="com.example.mogo_app.LoginMenu" android:exported="false" />
+		<activity android:name="com.example.mogo_app.ContextPage" android:exported="true">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<provider android:name="androidx.startup.InitializationProvider" android:exported="false" android:authorities="com.example.mogo_app.androidx-startup">
+			<meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup" />
+			<meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup" />
+		</provider>
+	</application>
+</manifest>
